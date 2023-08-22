@@ -1,0 +1,379 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --color-d_blue:#000022;
+  --color-blue_1:#072AC8;
+  --color-blue_2:#1A3EC1;
+  --color-green_1: #15D6B3;
+  --color-green_2:#73FBD3;
+  --color-green_3:#30F2F2;
+  --color-white:#fff;
+  --color-primary-blue:#1F64FF;
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(font/Outfit/Outfit-VariableFont_wght.ttf);
+}
+:root {
+  --size-1:0.25rem;
+  --size-2:0.5rem;
+  --size-3:0.75rem;
+  --size-4:1rem;
+  --size-5:1.25rem;
+  --size-6:1.5rem;
+  --size-7:1.75rem;
+  --size-8:2rem;
+  --size-9:2.25rem;
+  --size-10:2.5rem;
+  --size-11:2.75rem;
+  --size-12:3rem;
+  --size-13:3.25rem;
+  --size-14:3.5rem;
+  --size-15:3.75rem;
+  --size-16:4rem;
+  --size-17:4.25rem;
+  --size-18:4.5rem;
+  --size-19:4.75rem;
+  --size-20:5rem;
+  --size-21:5.25rem;
+  --size-22:5.5rem;
+  --size-23:5.75rem;
+  --size-24:6rem;
+}
+
+h1 {
+  padding-bottom: var(--size-6);
+  color: black;
+  font-size: var(--size-12);
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+h1 .heading-detail {
+  font-weight: 600;
+}
+
+h2.heading-2, .title.heading-2 {
+  position: relative;
+  padding-bottom: var(--size-6);
+  color: black;
+  font-size: var(--size-10);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h3, .title {
+  padding-bottom: var(--size-6);
+  color: black;
+  font-size: var(--size-9);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+h4.heading-4, .title.heading-4 {
+  padding-bottom: var(--size-6);
+  color: black;
+  font-size: var(--size-5);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h5.heading-5, .title.heading-5 {
+  padding-bottom: var(--size-6);
+  color: var(--color-white);
+  font-size: var(--size-5);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.description {
+  padding-bottom: var(--size-6);
+  color: black;
+  font-weight: 400;
+}
+
+.btn.btnPrimary {
+  all: unset;
+  margin: 0 auto var(--size-6) auto;
+  display: block;
+  padding: var(--size-4) var(--size-8);
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn.btnPrimary.light {
+  border: solid 2px var(--color-primary-blue);
+  background-color: transparent;
+  color: var(--color-primary-blue);
+}
+.btn.btnSecondary {
+  all: unset;
+  display: block;
+  padding: var(--size-2) var(--size-6);
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn.btnSecondary.light {
+  border: solid 2px var(--color-primary-blue);
+  background-color: transparent;
+  color: var(--color-primary-blue);
+}
+
+.sectionBody {
+  max-width: 340px;
+  margin: auto;
+  text-align: center;
+}
+
+@media all and (min-width: 768px) {
+  .sectionBody {
+    max-width: 600px;
+  }
+}
+@media all and (min-width: 900px) {
+  .sectionBody {
+    max-width: 732px;
+  }
+}
+@media all and (min-width: 1100px) {
+  .sectionBody {
+    max-width: 1600px;
+  }
+  .sectionBody.right {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--size-6);
+    align-items: center;
+    justify-items: end;
+  }
+}
+header .headBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headBody .logo {
+  width: 20%;
+  cursor: pointer;
+}
+header .headBody nav {
+  display: none;
+}
+header .headBody .btnContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: var(--size-4);
+  align-items: center;
+}
+header .headBody .btnContent .burgerMenu {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+header .headBody .btnContent .burgerMenu .burgerNav {
+  background-color: var(--color-primary-blue);
+  height: 2px;
+  width: 20px;
+}
+
+@media all and (min-width: 768px) {
+  header .headBody .logo {
+    position: relative;
+    width: 10%;
+  }
+  header .headBody nav {
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-7);
+  }
+  header .headBody nav .list {
+    all: unset;
+    color: var(--color-d_grey);
+    font-size: var(--size-4);
+    cursor: pointer;
+  }
+  header .headBody .btnContent .btn.btnSecondary {
+    text-align: center;
+    font-size: var(--size-4);
+    padding: var(--size-3) var(--size-6);
+  }
+  header .headBody .burgerMenu .burgerNav {
+    display: none;
+  }
+}
+@media all and (min-width: 1100px) {
+  header .headerBody {
+    justify-content: center;
+    margin: auto;
+    gap: var(--size-24);
+    flex-wrap: wrap;
+  }
+  header .headerBody .logo {
+    position: relative;
+    width: 10%;
+  }
+}
+.img-heropage {
+  width: 80%;
+}
+
+@media all and (min-width: 1100px) {
+  #hero .sectionBody {
+    text-align: left;
+  }
+  #hero .sectionBody h1 {
+    padding: var(--size-8) 0;
+  }
+  #hero .sectionBody .description {
+    padding-bottom: var(--size-16);
+  }
+  #hero .sectionBody .btnPrimary {
+    display: inline-block;
+    border: solid 2px var(--color-primary-blue);
+  }
+}
+#howItWorks .sectionBody .icon {
+  fill: var(--color-primary-blue);
+  width: 40px;
+  height: 40px;
+  margin-bottom: var(--size-3);
+}
+#howItWorks .sectionBody .title.heading-2 ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  border: solid 2px var(--color-primary-blue);
+}
+#howItWorks .sectionBody .info {
+  font-weight: 300;
+  padding-bottom: var(--size-8);
+}
+
+@media all and (min-width: 1100px) {
+  .article_Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--size-12);
+  }
+}
+footer {
+  background-color: var(--color-d_blue);
+  color: var(--color-white);
+}
+footer .littleTitle {
+  padding: var(--size-10) 0 var(--size-6);
+  color: var(--color-white);
+}
+footer .social {
+  display: inline-block;
+  fill: var(--color-white);
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+}
+footer .logo {
+  padding-top: var(--size-6);
+  display: block;
+  margin: auto;
+  width: 30%;
+}
+footer .list {
+  padding-bottom: var(--size-4);
+  font-weight: 300;
+}
+
+@media all and (min-width: 1100px) {
+  footer .sectionBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  footer .sectionBody .box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--size-8);
+  }
+  footer .sectionBody .box .logo {
+    margin: 0;
+  }
+  footer .sectionBody .littleTitle,
+  footer .sectionBody .list {
+    text-align: left;
+  }
+  footer .sectionBody .list {
+    font-size: var(--size-5);
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+}
+
+body {
+  margin: 0;
+  font-family: Outfit;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+@forward './reset';
+@forward './color-variables';
+@forward './typography';
+@forward './global';
+@forward "./header";
+@forward "./hero";
+@forward './howItWorks';
+@forward './aboutUs';
+@forward './footer';
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    width: 100vw;
+  }
+
+  body {
+    margin: 0;
+    font-family: Outfit;
+  }

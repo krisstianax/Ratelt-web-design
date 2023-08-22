@@ -1,0 +1,28 @@
+.sectionBody{
+    // padding: var(--size-4) 0 0 ;
+    max-width: 340px;
+    margin: auto;
+    text-align: center;
+}
+@media all and (min-width:768px){
+    .sectionBody{
+        max-width: 600px;
+    }
+}
+@media all and (min-width:900px){
+    .sectionBody{
+        max-width: 732px;
+    }
+}
+@media all and (min-width:1100px){
+    .sectionBody{
+        max-width: 1600px;
+        &.right{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--size-6);
+            align-items: center;
+            justify-items: end;
+            }
+    }
+}
