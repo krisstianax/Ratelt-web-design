@@ -1,6 +1,9 @@
 header{
     // margin-top: var(--size-8);
     .headBody{
+        padding:  var(--size-10) var(--size-4);
+        max-width: 1600px;
+        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;

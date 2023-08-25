@@ -107,15 +107,15 @@ h1 .heading-detail {
 
 h2.heading-2, .title.heading-2 {
   position: relative;
-  padding-bottom: var(--size-6);
+  padding-bottom: var(--size-12);
   color: black;
   font-size: var(--size-10);
   font-weight: 500;
   letter-spacing: 1px;
 }
 
-h3, .title {
-  padding-bottom: var(--size-6);
+h3.heading-3, .title.heading-3 {
+  padding-bottom: var(--size-);
   color: black;
   font-size: var(--size-9);
   font-weight: 500;
@@ -124,7 +124,7 @@ h3, .title {
 
 h4.heading-4, .title.heading-4 {
   padding-bottom: var(--size-6);
-  color: black;
+  color: var(--color-d_blue);
   font-size: var(--size-5);
   font-weight: 600;
   letter-spacing: 1px;
@@ -142,6 +142,13 @@ h5.heading-5, .title.heading-5 {
   padding-bottom: var(--size-6);
   color: black;
   font-weight: 400;
+}
+
+.detailInfo {
+  display: block;
+  color: var(--color-d_blue);
+  font-weight: 400;
+  padding-bottom: var(--size-8);
 }
 
 .btn.btnPrimary {
@@ -175,6 +182,7 @@ h5.heading-5, .title.heading-5 {
 }
 
 .sectionBody {
+  padding: var(--size-4) var(--size-4);
   max-width: 340px;
   margin: auto;
   text-align: center;
@@ -203,6 +211,9 @@ h5.heading-5, .title.heading-5 {
   }
 }
 header .headBody {
+  padding: var(--size-10) var(--size-4);
+  max-width: 1600px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -315,6 +326,310 @@ header .headBody .btnContent .burgerMenu .burgerNav {
     gap: var(--size-12);
   }
 }
+#important .description.important {
+  font-weight: 200;
+  color: grey;
+}
+#important .descriptionDetail {
+  font-weight: 400;
+  color: var(--color-d_blue);
+}
+#important .card {
+  border-radius: 5px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+}
+#important .title.heading-4 {
+  color: var(--color-d_blue);
+}
+#important .detail-h4 {
+  color: var(--color-primary-blue);
+  font-weight: 700;
+  font-size: var(--size-8);
+}
+#important .source {
+  color: gray;
+  font-size: var(--size-3);
+  font-weight: 200;
+}
+#important svg {
+  width: 120px;
+  height: 120px;
+}
+#important .moreInfo {
+  font-weight: 200;
+  color: grey;
+}
+
+@media all and (min-width: 1100px) {
+  #important .swiper {
+    width: 1600px;
+  }
+  #important .content {
+    text-align: left;
+    display: flex;
+    gap: var(--size-2);
+  }
+  #important .card {
+    margin: var(--size-10) auto;
+    padding: var(--size-10) var(--size-14);
+    background-color: var(--color-white);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s;
+  }
+  #important .card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+  }
+}
+#plans .moreInfo {
+  font-weight: 200;
+}
+#plans .detailInfo {
+  padding-bottom: var(--size-16);
+}
+#plans .card {
+  padding: var(--size-10);
+  margin-bottom: var(--size-10);
+  border: solid 1px var(--color-primary-blue);
+  background-color: var(--color-white);
+  border-radius: 30px;
+}
+#plans .card.blue {
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+}
+#plans .card .title.heading-3.blue {
+  color: var(--color-white);
+}
+#plans .card .number {
+  display: block;
+  color: grey;
+  font-weight: 200;
+  font-size: var(--size-4);
+  padding-bottom: var(--size-6);
+}
+#plans .card .boldNumber {
+  color: black;
+  font-weight: 600;
+  font-size: var(--size-8);
+}
+#plans .card .boldNumber.blue {
+  color: var(--color-white);
+}
+#plans .card .list {
+  text-align: left;
+  padding-bottom: var(--size-6);
+}
+#plans .card .check {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  color: black;
+}
+#plans .card .check.blue {
+  color: var(--color-white);
+}
+#plans .card .check::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  width: 6px;
+  height: 10px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+  color: black;
+}
+#plans .card .check::after.blue {
+  color: var(--color-white);
+}
+#plans .btn.btnPrimary.blue {
+  padding: var(--size-4) var(--size-8);
+  background-color: var(--color-white);
+  color: var(--color-primary-blue);
+}
+
+@media all and (min-width: 1100px) {
+  #plans .cards {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    align-items: stretch;
+    justify-items: center;
+  }
+  #plans .card {
+    transition: 1s;
+    padding: var(--size-6) var(--size-3);
+    width: 350px;
+  }
+  #plans .card:hover {
+    transform: scale(1.2);
+    z-index: 10;
+  }
+}
+#firstRate {
+  background-color: #F5F6FA;
+}
+#firstRate .pattern {
+  display: grid;
+  grid-template-rows: repeat 40px 40px 40px 40px;
+  grid-template-areas: "whiteSqure whiteSqure roundGreen greenDiagonal DBlueSqure blueSqure";
+}
+#firstRate .blueSqure {
+  grid-area: blueSqure;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-blue);
+}
+#firstRate .DBlueSqure {
+  grid-area: DBlueSqure;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-d_blue);
+}
+#firstRate .roundBlue {
+  grid-area: roundBlue;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-blue);
+}
+#firstRate .roundGreen {
+  grid-area: roundGreen;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-green_1);
+}
+#firstRate .roundDBlue {
+  grid-area: roundDBlue;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-d_blue);
+}
+#firstRate .greenSqure {
+  grid-area: greenSqure;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-green_1);
+}
+#firstRate .whiteSqure {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+  grid-area: whiteSqure;
+}
+#firstRate .greenDiagonal {
+  grid-area: greenDiagonal;
+}
+
+#aboutUs .descAboutUs {
+  font-weight: 350;
+  padding-bottom: var(--size-4);
+}
+#aboutUs .descAboutUs span {
+  display: block;
+  padding-top: var(--size-6);
+}
+#aboutUs .listAbout {
+  text-align: left;
+  list-style-type: circle;
+  padding-bottom: var(--size-6);
+  font-weight: 350;
+}
+#aboutUs .logoAboutUs {
+  width: 20%;
+  height: 20%;
+}
+
+@media all and (min-width: 1100px) {
+  #aboutUs .sectionBody {
+    text-align: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: var(--size-8);
+  }
+  #aboutUs .listAbout {
+    max-width: none;
+  }
+  #aboutUs .logoAboutUs {
+    width: 10%;
+    height: 10%;
+  }
+}
+#contactForm .titleBackground {
+  background-color: var(--color-blue_1);
+  height: 70vh;
+  text-align: center;
+}
+#contactForm .formbox .firstName,
+#contactForm .formbox .lastName,
+#contactForm .formbox .email,
+#contactForm .formbox .message {
+  all: unset;
+  background-color: transparent;
+  border-bottom: solid 1px var(--color-primary-blue);
+  margin-bottom: var(--size-8);
+}
+#contactForm .formbox .form-button {
+  all: unset;
+  display: block;
+  margin: auto;
+  padding: var(--size-4) var(--size-8);
+  background-color: var(--color-primary-blue);
+  color: var(--color-white);
+  border-radius: 10px;
+}
+
+@media all and (min-width: 1100px) {
+  #contactForm .sectionBody {
+    text-align: left;
+  }
+  #contactForm .sectionBody.contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--size-3);
+    align-items: center;
+  }
+  #contactForm .sectionBody .title.heading-2 {
+    color: var(--color-white);
+  }
+  #contactForm .sectionBody .formbox {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: var(--size-6);
+    grid-template-areas: "firstName LastName" "Email Email" "Message Message";
+  }
+  #contactForm .sectionBody .firstName {
+    grid-area: firstName;
+    font-size: var(--size-5);
+  }
+  #contactForm .sectionBody .lastName {
+    grid-area: LastName;
+    font-size: var(--size-5);
+  }
+  #contactForm .sectionBody .email {
+    grid-area: Email;
+    font-size: var(--size-5);
+  }
+  #contactForm .sectionBody .message {
+    grid-area: Message;
+    font-size: var(--size-5);
+  }
+}
 footer {
   background-color: var(--color-d_blue);
   color: var(--color-white);
@@ -367,10 +682,6 @@ footer .list {
 }
 * {
   box-sizing: border-box;
-}
-
-html {
-  width: 100vw;
 }
 
 body {

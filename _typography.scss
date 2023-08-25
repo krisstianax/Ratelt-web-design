@@ -42,7 +42,7 @@
        h2, .title{
         &.heading-2{
           position: relative;
-          padding-bottom: var(--size-6);
+          padding-bottom: var(--size-12);
           color: black;
           font-size: var(--size-10);
           font-weight: 500;
@@ -50,18 +50,20 @@
        }
       }
         h3, .title{
-          padding-bottom: var(--size-6);
+        &.heading-3{
+          padding-bottom: var(--size-);
           color: black;
           font-size: var(--size-9);
           font-weight: 500;
           letter-spacing: 1px;
         }
+      }
         h4, .title{
           &.heading-4{
           padding-bottom: var(--size-6);
-          color: black;
+          color: var(--color-d_blue);
           font-size: var(--size-5);
-          font-weight: 600;
+          font-weight:600;
           letter-spacing: 1px;
         }
       }
@@ -79,6 +81,12 @@
           color: black;
           font-weight: 400;
       }
+      .detailInfo{
+        display: block;
+        color: var(--color-d_blue);
+        font-weight: 400;
+        padding-bottom: var(--size-8);
+    }
       .btn{
         &.btnPrimary{
           all: unset;

@@ -5,16 +5,16 @@
 @forward "./header";
 @forward "./hero";
 @forward './howItWorks';
+@forward './important';
+@forward './plans';
+@forward './firstRate';
 @forward './aboutUs';
+@forward './contactForm';
 @forward './footer';
 
 
 * {
     box-sizing: border-box;
-  }
-  
-  html {
-    width: 100vw;
   }
 
   body {

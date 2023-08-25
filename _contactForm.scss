@@ -1,0 +1,78 @@
+#contactForm{
+    .titleBackground{
+        background-color: var(--color-blue_1);
+        height: 70vh;
+        text-align: center;
+    }
+    .formbox{
+        .firstName, 
+        .lastName,
+        .email,
+        .message{
+            all: unset;
+            background-color: transparent;
+            border-bottom: solid 1px var(--color-primary-blue);
+            margin-bottom: var(--size-8);
+
+        }
+        .form-button{
+            all: unset;
+            display: block;
+            margin: auto;
+            padding: var(--size-4) var(--size-8);
+            background-color: var(--color-primary-blue);
+            color: var(--color-white);
+            border-radius: 10px;
+
+        }
+    }
+
+}
+@media all and (min-width:1100px) {
+#contactForm{
+    .sectionBody{
+        text-align: left;
+        &.contact{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--size-3);
+            align-items: center;
+        }
+        .title{
+            &.heading-2{
+                color:var(--color-white);
+            }
+        }
+    .formbox{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: var(--size-6);
+        grid-template-areas: 
+        "firstName LastName"
+        "Email Email"
+        "Message Message";
+    }
+    .firstName{
+        grid-area: firstName;
+        font-size: var(--size-5);
+    }
+    .lastName{
+        grid-area: LastName;
+        font-size: var(--size-5);
+
+    }
+    .email{
+        grid-area: Email;
+        font-size: var(--size-5);
+
+    }
+
+    .message{
+        grid-area: Message;
+        font-size: var(--size-5);
+
+    }
+        }
+    
+}
+}

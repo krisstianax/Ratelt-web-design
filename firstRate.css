@@ -1,0 +1,66 @@
+#firstRate {
+  background-color: #F5F6FA;
+}
+#firstRate .pattern {
+  display: grid;
+  grid-template-areas: "whiteSqure" "whiteSqure" "roundGreen" "greenDiagonal" "DBlueSqure" "blueSqure" "whiteSqure" "blueSqure" "whiteSqure" "blueSqure" "whiteSqure" "roundGreen" "greenDiagonal" "whiteSqure" "roundBlue" "greenSqure" "roundBlue" "blueSqure" "whiteSqure" "roundDBlue" "greenDiagonal" "whiteSqure" "blueSqure" "whiteSqure";
+}
+#firstRate .pattern .blueSqure {
+  grid-area: blueSqure;
+}
+#firstRate .pattern .DBlueSqure {
+  grid-area: DBlueSqure;
+}
+#firstRate .pattern .roundBlue {
+  grid-area: roundBlue;
+}
+#firstRate .pattern .roundGreen {
+  grid-area: roundGreen;
+}
+#firstRate .pattern .roundDBlue {
+  grid-area: roundDBlue;
+}
+#firstRate .pattern .greenSqure {
+  grid-area: greenSqure;
+}
+#firstRate .pattern .whiteSqure {
+  grid-area: whiteSqure;
+}
+#firstRate .pattern .greenDiagonal {
+  grid-area: greenDiagonal;
+}
+#firstRate .pattern .blueSqure {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-blue);
+}
+#firstRate .pattern .DBlueSqure {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-d_blue);
+}
+#firstRate .pattern .roundDBlue {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-d_blue);
+}
+#firstRate .pattern .roundBlue {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-primary-blue);
+}
+#firstRate .pattern .roundGreen {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-green_1);
+}
+#firstRate .pattern .greenSqure {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-green_1);
+}
+#firstRate .pattern .whiteSqure {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-white);
+}/*# sourceMappingURL=firstRate.css.map */

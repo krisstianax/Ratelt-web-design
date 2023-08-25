@@ -1,0 +1,63 @@
+#firstRate{
+    background-color: #F5F6FA;
+    .pattern{
+        display: grid;
+        // gap: var(--size-6);
+        // grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat 40px 40px 40px 40px;
+
+        grid-template-areas: 
+        "whiteSqure whiteSqure roundGreen greenDiagonal DBlueSqure blueSqure";
+        // "whiteSqure blueSqure whiteSqure blueSqure whiteSqure roundGreen"
+        // "greenDiagonal whiteSqure roundBlue greenSqure roundBlue blueSqure"
+        // "whiteSqure roundDBlue greenDiagonal whiteSqure blueSqure whiteSqure";
+        // .greenDiagonal{
+        // }
+    }
+
+    .blueSqure    {
+        grid-area: blueSqure;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-primary-blue);
+    }
+    .DBlueSqure     {
+        grid-area: DBlueSqure;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-d_blue);
+    }
+    .roundBlue        {
+        grid-area: roundBlue;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-primary-blue);
+    }
+    .roundGreen     {
+        grid-area: roundGreen;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-green_1);
+    }
+    .roundDBlue    {
+        grid-area: roundDBlue;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-d_blue);
+    }
+    .greenSqure       {
+        grid-area: greenSqure;
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-green_1);
+    }
+    .whiteSqure       {
+        width: 40px;
+        height: 40px;
+        background-color: var(--color-white);
+        grid-area: whiteSqure;
+    }
+    .greenDiagonal       {
+        grid-area: greenDiagonal;
+    }
+}
