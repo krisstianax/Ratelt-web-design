@@ -1,63 +1,64 @@
 #firstRate{
     background-color: #F5F6FA;
     .pattern{
+        width: 600px;
         display: grid;
-        // gap: var(--size-6);
-        // grid-template-columns: repeat(6,1fr);
-        grid-template-rows: repeat 40px 40px 40px 40px;
-
+        grid-template-columns: repeat(6, 1fr);
         grid-template-areas: 
-        "whiteSqure whiteSqure roundGreen greenDiagonal DBlueSqure blueSqure";
-        // "whiteSqure blueSqure whiteSqure blueSqure whiteSqure roundGreen"
-        // "greenDiagonal whiteSqure roundBlue greenSqure roundBlue blueSqure"
-        // "whiteSqure roundDBlue greenDiagonal whiteSqure blueSqure whiteSqure";
+        "1 2 3 13 6 1"
+        "18 2 19 3 20 10"
+        "14 21 11 12 8 4"
+        "22 7 15 23 5 24";
         // .greenDiagonal{
         // }
     }
 
     .blueSqure    {
-        grid-area: blueSqure;
-        width: 40px;
-        height: 40px;
+        grid-area: 
+        width: 100px;
+        height: 100px;
         background-color: var(--color-primary-blue);
     }
     .DBlueSqure     {
-        grid-area: DBlueSqure;
-        width: 40px;
-        height: 40px;
-        background-color: var(--color-d_blue);
+        grid-area: 6;
+        width: 100px;
+        height: 100px;
+        background-color: darkblue;
     }
     .roundBlue        {
-        grid-area: roundBlue;
-        width: 40px;
-        height: 40px;
+        grid-area: 7, 8;
+        border-bottom-left-radius: 100px;
+        width: 100px;
+        height: 100px;
         background-color: var(--color-primary-blue);
     }
     .roundGreen     {
-        grid-area: roundGreen;
-        width: 40px;
-        height: 40px;
-        background-color: var(--color-green_1);
+        grid-area: 3, 10;
+        border-top-left-radius: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
     }
     .roundDBlue    {
-        grid-area: roundDBlue;
-        width: 40px;
-        height: 40px;
-        background-color: var(--color-d_blue);
+        grid-area: 11;
+        border-bottom-left-radius: 100px;
+        width: 100px;
+        height: 100px;
+        background-color: darkblue;
     }
     .greenSqure       {
-        grid-area: greenSqure;
-        width: 40px;
-        height: 40px;
-        background-color: var(--color-green_1);
+        grid-area: 12;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
     }
     .whiteSqure       {
-        width: 40px;
-        height: 40px;
+        width: 100px;
+        height: 100px;
         background-color: var(--color-white);
-        grid-area: whiteSqure;
+        grid-area: 1, 2, 18, 19, 20, 21, 22, 23, 24;
     }
     .greenDiagonal       {
-        grid-area: greenDiagonal;
+        grid-area: 13, 14, 15;
     }
 }
