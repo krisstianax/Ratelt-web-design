@@ -1,0 +1,23 @@
+@forward './variables/reset';
+@forward './variables/color-variables';
+@forward './variables/typography';
+@forward './variables/global';
+@forward "./sections/header";
+@forward "./sections/hero";
+@forward './sections/howItWorks';
+@forward './sections/important';
+@forward './sections/plans';
+@forward './sections/firstRate';
+@forward './sections/aboutUs';
+@forward './sections/contactForm';
+@forward './sections/footer';
+
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: Outfit;
+  }
