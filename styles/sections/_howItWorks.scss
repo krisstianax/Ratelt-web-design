@@ -9,23 +9,22 @@
         height: 40px;
         margin-bottom: var(--size-3);
     }
-    .title{
-        &.heading-2{
-            ::after{
-            content: '';
-            position: absolute;
-            bottom: 0;
-            width: 100px;
-            height: 2px;
-            border: solid 2px var(--color-primary-blue);
-        }
-    }
+    // .title{
+    //     // &.heading-2{
+    //     //     ::after{
+    //     //     content: '';
+    //     //     position: absolute;
+    //     //     bottom: 0;
+    //     //     width: 100px;
+    //     //     height: 2px;
+    //     //     border: solid 2px var(--color-primary-blue);
+    //     // }
+    
     }
     .info{
         font-weight: 300;
         padding-bottom: var(--size-8);
     }
-}
 
 }
 @media all and (min-width:1100px){

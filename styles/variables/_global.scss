@@ -4,6 +4,17 @@
     margin: auto;
     text-align: center;
 }
+//     .line{
+//     content: '';
+//     position: absolute;
+//     transform: translateX(-310%);
+//     bottom: 20px;
+//     width: 50px;
+//     height: 2px;
+//     border: solid 2px var(--color-primary-blue);
+//     border-radius: 5px;
+
+// }
 @media all and (min-width:768px){
     .sectionBody{
         max-width: 600px;

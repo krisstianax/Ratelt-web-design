@@ -302,15 +302,7 @@ header .headBody .btnContent .burgerMenu .burgerNav {
   height: 40px;
   margin-bottom: var(--size-3);
 }
-#howItWorks .sectionBody .title.heading-2 ::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100px;
-  height: 2px;
-  border: solid 2px var(--color-primary-blue);
-}
-#howItWorks .sectionBody .info {
+#howItWorks .info {
   font-weight: 300;
   padding-bottom: var(--size-8);
 }
