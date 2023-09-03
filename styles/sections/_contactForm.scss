@@ -49,7 +49,7 @@
         &.contact{
             display: grid;
             grid-template-columns: 1fr 2fr;
-            gap: var(--size-3);
+            gap: var(--size-24);
             align-items: center;
         }
         .titleBackground{
@@ -68,7 +68,7 @@
             margin: unset;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
-            gap: var(--size-6);
+            gap:  0 var(--size-20);
             grid-template-areas: 
             "firstName LastName"
             "Email Email"
@@ -93,6 +93,10 @@
             grid-area: Message;
             font-size: var(--size-5);
 
+        }
+        .form-button{
+            margin: unset;
+            width: 105px;
         }
             }
         

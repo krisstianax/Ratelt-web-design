@@ -40,7 +40,29 @@
             color: var(--color-white);
         }
         }
+        .planDuration{
+            margin: 0 auto var(--size-4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--size-4) var(--size-8);
+            width: 200px;
+            gap: var(--size-6);
+            background-color: #6293FF;
+            border-radius: 5px;
+            .duration{
+            &:hover{
+                background-color: var(--color-white);
+                color: var(--color-primary-blue);
+                padding: var(--size-2);
+                border-radius: 5px;            
+            }
+        }
+        }
         .list{
+            display: flex;
+            align-items: center;
+            gap: var(--size-2);
             text-align: left;
             padding-bottom: var(--size-6);
         }
@@ -54,9 +76,9 @@
             border: 2px solid transparent;
             border-radius: 100px;
             color: black;
-            // &.blue{
-            //     color: var(--color-white);
-            // }
+            &.blue{
+                color: var(--color-white);
+            }
         }
         .check::after {
             content: "";
@@ -98,13 +120,8 @@
             justify-items: center;
         }
         .card{
-            transition: 1s;
             padding: var(--size-6) var(--size-3);
             width: 350px;
-            &:hover{
-                transform:  scale(1.2);
-                z-index: 10;
-            }
         }
     }
 }

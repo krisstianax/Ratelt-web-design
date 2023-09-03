@@ -13,7 +13,8 @@
         }
         .btnPrimary{
             display: inline-block;
-            border: solid 2px var(--color-primary-blue)
+            border: solid 2px var(--color-primary-blue);
+            margin-right: var(--size-2);
         }
     }
 }

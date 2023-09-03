@@ -1,5 +1,5 @@
 footer {
-    background-color: var(--color-d_blue);
+    background-color: #090949;
     color: var(--color-white);
     .littleTitle{
         padding: var(--size-10) 0 var(--size-6);
@@ -9,7 +9,7 @@ footer {
       .social {
         display: inline-block;
         fill: var(--color-white);
-        margin-left: 15px;
+        margin-right: 15px;
         width: 30px;
         height: 30px;
       }
@@ -21,7 +21,7 @@ footer {
       }
 
       .list {
-        padding-bottom: var(--size-4);
+        padding-bottom: var(--size-9);
         font-weight: 300;
       }
 
@@ -31,24 +31,27 @@ footer {
           .sectionBody {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: baseline;
             .box{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                gap: var(--size-8);
+                gap: var(--size-5);
+                padding-bottom: var(--size-16);
                 .logo{
                     margin: 0;
+                    width: 60%;
                 }
             }
             
+            .title,
             .littleTitle,
             .list {
               text-align: left;
             }
             .list{
-              font-size: var(--size-5);
+              font-size: var(--size-4);
             }
 
           }

@@ -1,127 +1,124 @@
 #firstRate{
-    background-color: #F5F6FA;
-    .pattern{
-        width: 600px;
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);        
-        grid-template-areas: 
-        "13 16 3 13 6 1"
-        "18 2 19 3 20 10"
-        "14 21 11 12 8 4"
-        "22 7 15 23 5 24";
-
+    background-color: #F5F6FA;}
+@media all and (min-width: 1100px){
+    .firstRateBody{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 120px;
     }
-
-    .blueSqure{
-        width: 100px;
-        height: 100px;
-        background-color: var(--color-primary-blue);
-        &1{
-            grid-area: 1;
-        }
-        &2{
-            grid-area: 2;
-        }
-        &3{
-            grid-area: 3;
-        }
-        &4{
-            grid-area: 4;
-        }
-        &5{
-            grid-area: 5;
-        }
-    }
-    .DBlueSqure{
-        width: 100px;
-        height: 100px;
-        background-color: darkblue;
-        &9{
-            grid-area: 9;
-        }
-    }
-    .roundBlue{
-        border-bottom-left-radius: 100px;
-        width: 100px;
-        height: 100px;
-        background-color: var(--color-primary-blue);
-        &6{
-            grid-area: 6;
-        }
-        &7{
-            grid-area: 7;
-        }
-    }
-    .roundGreen     {
-        border-top-left-radius: 100px;
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        &9{
-            grid-area: 11;
-        }
-        &10{
-            grid-area: 10;
-        }
-    }
-    .roundDBlue    {
-        border-bottom-left-radius: 100px;
-        width: 100px;
-        height: 100px;
-        background-color: darkblue;
-        &8{
-            grid-area: 8;
-        }
-    }
-    .greenSqure{
-        width: 100px;
-        height: 100px;
-        background-color: yellow;
-        &12{
-            grid-area: 12;
-        }
-    }
-    .whiteSqure{
-        width: 100px;
-        height: 100px;
-        background-color: var(--color-white);
-        &13{
-            grid-area: 13;
-        }
-        &14{
-            grid-area: 14;
-        }
-        &15{
-            grid-area: 15;
-        }
-        &16{
-            grid-area: 16;
-        }
-        &17{
-            grid-area: 17;
-        }
-        &18{
-            grid-area: 18;
-        }
-        &19{
-            grid-area: 19;
-        }
-        &20{
-            grid-area: 20;
-        }
-        &21{
-            grid-area: 21;
-        }
-    }
-    .greenDiagonal       {
-        &22{
-            grid-area: 22;
-        }
-        &23{
-            grid-area: 23;
-        }
-        &24{
-            grid-area: 24;
+    .title{
+        &.heading-2{ 
+            &.rate{
+            width: 500px;
         }
     }
 }
+    .btn{
+        &.btnPrimary {
+            &.rate{
+                margin-left: 0;
+            }
+        }
+    }
+}
+//     .pattern{
+//         // width: 600px;
+//         display: grid;
+//         grid-template-columns: repeat(6, 1fr);
+
+//     }
+
+//     .blueSqure{
+//         width: 100px;
+//         height: 100px;
+//         background-color: var(--color-primary-blue);
+//         &1{
+//             width: 100px;
+//             height: 100px;
+//             grid-column-start: 6;
+//             grid-column-end: 7;
+//             background-color: var(--color-primary-blue);
+//         }
+//         &2{
+//             width: 100px;
+//             height: 100px;
+//             grid-column-start: 8;
+//             grid-column-end: 9; 
+//             background-color: var(--color-primary-blue);       
+//         }
+//         &3{
+//             width: 100px;
+//             height: 100px;
+//             grid-column-start: 10;
+//             grid-column-end: 11;  
+//             background-color: var(--color-primary-blue);      
+//         }
+//         &4{
+//             grid-area: 4;
+//         }
+//         &5{
+//             grid-area: 5;
+//         }
+//     }
+//     .DBlueSqure{
+//         width: 100px;
+//         height: 100px;
+//         background-color: darkblue;
+//         &9{
+//             grid-area: 9;
+//         }
+//     }
+//     .roundBlue{
+//         border-bottom-left-radius: 100px;
+//         width: 100px;
+//         height: 100px;
+//         background-color: var(--color-primary-blue);
+//         &6{
+//             grid-area: 6;
+//         }
+//         &7{
+//             grid-area: 7;
+//         }
+//     }
+//     .roundGreen{
+//         border-top-left-radius: 100px;
+//         width: 100px;
+//         height: 100px;
+//         background-color: red;
+//         &9{
+//             grid-area: 11;
+//         }
+//         &10{
+//             grid-area: 10;
+//         }
+//     }
+//     .roundDBlue    {
+//         border-bottom-left-radius: 100px;
+//         width: 100px;
+//         height: 100px;
+//         background-color: darkblue;
+//         &8{
+//             grid-area: 8;
+//         }
+//     }
+//     .greenSqure{
+//         width: 100px;
+//         height: 100px;
+//         background-color: yellow;
+//         &12{
+//             grid-area: 12;
+//         }
+//     }
+//     .greenDiagonal       {
+//         &13{
+//             grid-area: 22;
+//         }
+//         &14{
+//             grid-area: 23;
+//         }
+//         &15{
+//             grid-area: 24;
+//         }
+//     }
+// }

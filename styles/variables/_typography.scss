@@ -1,8 +1,8 @@
 
-// @font-face {
-//     font-family: Outfit;
-//     src: url(font/Outfit/Outfit-VariableFont_wght.ttf);
-//   }
+@font-face {
+    font-family: Outfit;
+    src: url(font/Outfit/Outfit-VariableFont_wght.ttf);
+  }
 :root {
     --size-1:0.25rem;
     --size-2:0.5rem;
@@ -42,16 +42,16 @@
        h2, .title{
         &.heading-2{
           position: relative;
-          padding-bottom: var(--size-12);
+          padding-bottom: var(--size-14);
           color: black;
-          font-size: var(--size-10);
-          font-weight: 500;
+          font-size: var(--size-13);
+          font-weight: 600;
           letter-spacing: 1px;
        }
       }
         h3, .title{
         &.heading-3{
-          padding-bottom: var(--size-);
+          padding-bottom: var(--size-6);
           color: black;
           font-size: var(--size-9);
           font-weight: 500;
@@ -92,13 +92,14 @@
           all: unset;
           margin: 0 auto var(--size-6) auto ;
           display: block;
-          padding: var(--size-4) var(--size-8);
+          padding: var(--size-4) var(--size-10);
           background-color: var(--color-primary-blue);
+          border: solid 1px var(--color-primary-blue);
           color: var(--color-white);
           border-radius: 10px;
           cursor: pointer;
           &.light{
-            border: solid 2px var(--color-primary-blue);
+            border: solid 1px var(--color-primary-blue);
             background-color: transparent;
             color: var(--color-primary-blue);
           }
@@ -114,7 +115,7 @@
             border-radius: 10px;
             cursor: pointer;
             &.light{
-              border: solid 2px var(--color-primary-blue);
+              border: solid 1px var(--color-primary-blue);
               background-color: transparent;
               color: var(--color-primary-blue);
             }
